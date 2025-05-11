@@ -7,9 +7,7 @@ import java.sql.ResultSet;
 
 public class FetchStudentScore {
 
-    /**
-     * Fetches and displays a single student's score with full name.
-     */
+    //Fetches and displays a single student's score with full name.
     public static void getStudentScore(int studentId) {
         String selectSQL = "SELECT sd.student_id, sd.first_name, sd.last_name, ss.score " +
                 "FROM student_data sd " +

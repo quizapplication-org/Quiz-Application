@@ -41,7 +41,4 @@ public class AdminRegistration {
         registerAdmin(username, password);
     }
 
-//    public static void main(String[] args) {
-//        registerAdminFromInput();
-//    }
 }

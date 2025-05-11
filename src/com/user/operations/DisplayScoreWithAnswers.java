@@ -1,6 +1,6 @@
 package com.user.operations;
-import com.database.operations.CommonConnection;
 
+import com.database.operations.CommonConnection;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

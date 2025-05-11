@@ -10,8 +10,6 @@ import java.util.Scanner;
 
 public class StudentLogin {
 
-//    public static void main(String[] args) {
-
     public static Integer loginAndReturnId () {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Username: ");
@@ -33,13 +31,6 @@ public class StudentLogin {
                 System.out.println("Login successful! Welcome, " + username);
                 return studentId;
             }
-
-//            else {
-//                System.out.println("Invalid username or password. Please register if you haven’t already.");
-//                System.out.println("Do you want to register? (yes/no");
-//                return null;
-//            }
-
             else {
                 System.out.println("Invalid username or password. Please register if you haven’t already.");
                 System.out.print("Do you want to register? (yes/no): ");
