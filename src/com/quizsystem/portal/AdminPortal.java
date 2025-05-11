@@ -52,9 +52,9 @@ public class AdminPortal {
         int choice;
         do {
             System.out.println("------   Welcome Admin   ------");
-            System.out.println("3. View All Student Scores");
-            System.out.println("4. View Individual Student Score");
-            System.out.println("5. Insert New Quiz Question");
+            System.out.println("1. View All Student Scores");
+            System.out.println("2. View Individual Student Score");
+            System.out.println("3. Insert New Quiz Question");
             System.out.println("0. Logout");
             System.out.println("-------------------------------");
             System.out.print("Enter your choice: ");
@@ -64,22 +64,22 @@ public class AdminPortal {
                 scanner.nextLine(); // consume newline
 
                 switch (choice) {
-                    case 3:
+                    case 1:
                         FetchStudentScore.getAllStudentScores();
                         break;
-                    case 4:
+                    case 2:
                         System.out.print("Enter student ID to view score: ");
                         int studentId = scanner.nextInt();
                         FetchStudentScore.getStudentScore(studentId);
                         break;
-                    case 5:
+                    case 3:
                         InsertQueAns.insertQuestionFromInput(scanner);
                         break;
                     case 0:
                         System.out.println("Logging out...");
                         break;
                     default:
-                        System.out.println("Invalid choice.");
+                        System.out.println("Invalid choice. Please enter correct choice");
                 }
 
             } catch (InputMismatchException e) {

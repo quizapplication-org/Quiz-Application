@@ -51,8 +51,8 @@ public class StudentPortal {
         int choice;
         do {
             System.out.println("------   Welcome Student   ------");
-            System.out.println("3. Start Quiz");
-            System.out.println("4. View your score and correct answers");
+            System.out.println("1. Start Quiz");
+            System.out.println("2. View your score and correct answers");
             System.out.println("0. Logout");
             System.out.println("----------------------------------");
             System.out.print("Enter your choice: ");
@@ -62,10 +62,10 @@ public class StudentPortal {
                 scanner.nextLine(); // consume newline
 
                 switch (choice) {
-                    case 3:
+                    case 1:
                         DisplayScoreWithAnswers.fetchAndSubmitAnswers(loggedInStudentId);
                         break;
-                    case 4:
+                    case 2:
                         DisplayScoreWithAnswers.displayStudentScore(loggedInStudentId);
                         break;
                     case 0:
